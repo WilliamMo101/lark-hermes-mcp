@@ -2,6 +2,8 @@
 
 **[English](./README.md) · [简体中文](./README.zh-CN.md)**
 
+当你从Openclaw转到Hermes上是否发现他跟你的飞书Bot仅具备沟通功能，原来适配opencalw可以操作多维表格的插件
+用不了？恭喜你找到了解决方案。
 一个轻量的 **MCP stdio 服务器**，把飞书（Feishu）/ Lark 的开放平台能力
 暴露成 function tool，供 Hermes、Claude Desktop 或其他兼容 MCP 的 Agent 调用。
 

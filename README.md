@@ -1,5 +1,7 @@
 # lark-hermes-mcp
 
+**[English](./README.md) · [简体中文](./README.zh-CN.md)**
+
 Thin **MCP stdio server** that exposes Feishu (飞书) / Lark capabilities as
 function tools to Hermes, Claude Desktop, or any other MCP-compatible agent.
 

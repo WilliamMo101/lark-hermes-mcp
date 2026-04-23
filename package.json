@@ -1,0 +1,49 @@
+{
+  "name": "lark-hermes-mcp",
+  "version": "0.1.0",
+  "description": "Thin MCP server exposing Feishu/Lark OpenAPI capabilities to Hermes and other MCP agents, bridging @larksuite/openclaw-lark's native tools.",
+  "type": "module",
+  "main": "dist/server.js",
+  "license": "MIT",
+  "author": "WilliamMo101 <mo523378747@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilliamMo101/lark-hermes-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WilliamMo101/lark-hermes-mcp/issues"
+  },
+  "homepage": "https://github.com/WilliamMo101/lark-hermes-mcp#readme",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "feishu",
+    "lark",
+    "hermes",
+    "agent",
+    "openapi",
+    "openclaw"
+  ],
+  "scripts": {
+    "postinstall": "node scripts/postinstall-patches.mjs",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@larksuite/openclaw-lark": "^2026.4.8",
+    "@larksuiteoapi/node-sdk": "^1.60.0",
+    "@modelcontextprotocol/sdk": "^1.13.0",
+    "@sinclair/typebox": "^0.34.48",
+    "pino": "^9.5.0",
+    "zod": "^3.23.8",
+    "zod-to-json-schema": "^3.23.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
